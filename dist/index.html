@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +12,18 @@
 		/>
 		<link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
 		<link rel="stylesheet" href="./css/style.css" />
+		<!-- Script inside head tag to prevent content flashing -->
+		<script>
+			if (
+				localStorage.getItem('color-theme') === 'dark' ||
+				(!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme:dark)').matches)
+			) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
+		</script>
+		<script src="./script.js" defer></script>
 		<title>Fylo</title>
 	</head>
 	<body class="font-opensans dark:bg-darkBlue dark:text-white">
