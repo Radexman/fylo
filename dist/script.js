@@ -1,8 +1,12 @@
 // Dark Mode Toggler and Dynamic UI
 
+// Dom Elements
 const themeToggleBtn = document.getElementById('theme-toggle');
 const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
 const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+const earlyAccessForm = document.getElementById('early-access-form');
+const errorMsg = document.getElementById('error-msg');
+const successMsg = document.getElementById('success-msg');
 
 if (
 	localStorage.getItem('color-theme') === 'dark' ||
@@ -44,3 +48,17 @@ function toggleMode() {
 		}
 	}
 }
+
+// Early Access Form Validation
+earlyAccessForm.addEventListener('submit', (e) => {
+	e.preventDefault();
+
+	const input = e.target.firstElementChild.firstElementChild.value;
+
+	if (input === '') {
+		errorMsg.classList.remove('hidden');
+		return;
+	}
+	errorMsg.classList.add('hidden');
+	successMsg.classList.remove('hidden');
+});
