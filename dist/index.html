@@ -244,19 +244,30 @@
 						<button type="submit" class="w-full rounded-full bg-accentCyan p-3 px-6 font-bold duration-200 hover:scale-95 md:w-56">
 							Get started for free
 						</button>
-						<p id="error-msg" class="hidden pl-2 text-sm text-red-700">Please enter your email address</p>
-						<p id="success-msg" class="hidden pl-2 text-sm">Thank you for your contribution!</p>
 					</form>
+					<p id="error-msg" class="hidden pl-2 text-sm text-red-700">Please enter your email address</p>
+					<p id="success-msg" class="hidden pl-2 text-sm">Thank you for your contribution!</p>
 				</div>
 			</section>
 		</main>
 		<!-- Footer -->
-		<footer id="footer" class="bg-darkBlueTwo">
-			<div class="container mx-auto px-5 pb-10">
+		<footer id="footer" class="bg-darkBlueTwo text-white">
+			<div class="container mx-auto px-5 py-10">
 				<!-- Flex Container For All Items -->
-				<div class="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0">
+				<div class="flex flex-col justify-between space-y-24 pl-6 md:flex-row md:space-y-0 md:pl-0">
+					<!-- Company Details -->
+					<div class="flex flex-col space-y-6">
+						<img src="./assets/logo.svg" class="w-52" alt="" />
+						<div class="flex space-x-4">
+							<img src="./assets/icon-location.svg" class="mt-1 h-3 w-3" alt="" />
+							<p class="max-w-xs text-sm">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus corrupti, omnis perferendis facilis adipisci
+								deleniti eum sint exercitationem.
+							</p>
+						</div>
+					</div>
 					<!-- Email & Phone -->
-					<div class="mt-10 space-y-6">
+					<div class="space-y-6 pt-10">
 						<div class="flex items-center space-x-3 md:-mt-10">
 							<div class="w-6">
 								<img src="./assets/icon-phone.svg" class="scale-10" alt="" />
@@ -271,8 +282,52 @@
 						</div>
 					</div>
 					<!-- Menus -->
+					<div class="flex flex-col space-y-10 text-xl md:flex-row md:space-x-20 md:space-y-0 md:text-base">
+						<ul class="flex flex-col space-y-3">
+							<li>
+								<a href="#" class="hover:text-accentBlue">About</a>
+							</li>
+							<li>
+								<a href="#" class="hover:text-accentBlue">Jobs</a>
+							</li>
+							<li>
+								<a href="#" class="hover:text-accentBlue">Press</a>
+							</li>
+							<li>
+								<a href="#" class="hover:text-accentBlue">Blog</a>
+							</li>
+						</ul>
+						<ul class="flex flex-col space-y-3">
+							<li>
+								<a href="#" class="hover:text-accentBlue">Contact Us</a>
+							</li>
+							<li>
+								<a href="#" class="hover:text-accentBlue">Terms</a>
+							</li>
+							<li>
+								<a href="#" class="hover:text-accentBlue">Privacy</a>
+							</li>
+						</ul>
+					</div>
 
 					<!-- Social -->
+					<div class="flex justify-center space-x-3 pb-10">
+						<div class="duration-200 hover:scale-90">
+							<a href="#">
+								<img src="./assets/facebook.svg" class="ficon rounded-full bg-darkBlue p-2" alt="" />
+							</a>
+						</div>
+						<div class="duration-200 hover:scale-95">
+							<a href="#">
+								<img src="./assets/twitter.svg" class="ficon rounded-full bg-darkBlue p-2" alt="" />
+							</a>
+						</div>
+						<div class="duration-200 hover:scale-95">
+							<a href="#">
+								<img src="./assets/instagram.svg" class="ficon rounded-full bg-darkBlue p-2" alt="" />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
