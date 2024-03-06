@@ -22,7 +22,7 @@ This project, named Fylo, represents a meticulous rendition of the Fylo service 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/radexman/fylo-challenge.git
+git clone https://github.com/radexman/fylo.git
 ```
 
 2. Navigate to the project directory:
