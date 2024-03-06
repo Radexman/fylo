@@ -2,6 +2,9 @@
 
 This project, named Fylo, represents a meticulous rendition of the Fylo service website as per the specifications outlined in the Frontend Mentor challenge. Leveraging Tailwind CSS, JavaScript, and HTML, I meticulously crafted custom variables tailored to the designated theme, ensuring a faithful reproduction of the original design.
 
+Fylo Page Link: </br>
+https://fylo001.netlify.app/
+
 ## **Features**
 
 <ul>
